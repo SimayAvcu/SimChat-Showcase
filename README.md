@@ -76,20 +76,32 @@ Bu modül, kullanıcıların yüklediği uzun metinlerin ana fikrini kaybetmeden
 
 ---
 
+
+## 3. Metin Özetleme Modülü (Text Summarization)
+
+### 3.1. Genel Akış ve Özellik
+
+Bu modül, kullanıcıların yüklediği uzun metinlerin ana fikrini kaybetmeden hızlı ve verimli bir şekilde özetlenmesini sağlar. Bu özellik, kullanıcıların yoğun mesaj trafiğini veya uzun haber metinlerini kolayca sindirmesine yardımcı olur.
+
+---
+
 ### 3.2. Metin Özetleme Modülü Akışı
 
 #### Görsel 1: Metin Girişi
 
-Kullanıcı, özetlemek istediği uzun metni ilgili alana yapıştırır.
+Kullanıcı, özetlenmesini istediği uzun metni ilgili alana yapıştırır.
 
-<img src="ozetleme_giris.png" alt="Metin Özetleme Giriş Ekranı" width="800px">
-*(Lütfen 'ozetleme_giris.png' dosya adını kendi görsel adınızla değiştirin.)*
+<img src="message_input_interface.png" alt="Metin Özetleme Giriş Ekranı" width="800px">
 
-#### Görsel 2: Özetleme Çıktısı
+#### Görsel 2: Metnin Sisteme Kaydedilmesi ve Görüntülenmesi
 
-Gönderilen metin, arka plandaki **BART (Bidirectional and Auto-Regressive Transformer)** modeline iletilir. Model, metni kısaltarak kritik bilgileri koruyan bir özet metin oluşturur.
+Gönderilen orijinal metin, sisteminize kaydedilir ve kullanıcının takip edebilmesi için görüntülenir.
 
-<img src="ozetleme_cikti.png" alt="Metin Özetleme Sonucu" width="800px">
-*(Lütfen 'ozetleme_cikti.png' dosya adını kendi görsel adınızla değiştirin.)*
+<img src="message_display_interface.png" alt="Metin Görüntüleme Ekranı" width="800px">
 
----
+#### Görsel 3: Özetleme Sonucu (Çıktı)
+
+Sistem, orijinal metni arka plandaki **BART** modeline ileterek kısa, öz ve akıcı bir özet metin oluşturur ve kullanıcıya sunar.
+
+<img src="text_summarization_module_output.png" alt="Metin Özetleme Sonucu" width="800px">
+
