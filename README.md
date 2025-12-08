@@ -58,13 +58,13 @@ Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
 
 Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme kaydedilir.
 
-<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="500px">
+<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="600px">
 
 #### Görsel 3: Anlık Duygu Analizi Sonucu
 
 Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygusu anlık olarak etiketlenir ve görüntülenir.
 
-<img src="duygu_analizi.png" alt="Duygu Analizi Ekranı" width="800px">
+<img src="sentiment_analysis_result.png" alt="Duygu Analizi Ekranı" width="800px">
 
 ---
 
