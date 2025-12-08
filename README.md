@@ -52,13 +52,13 @@ Bu bölümde, Duygu Analizi modülünün çalışma akışı üç aşamalı gör
 
 Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
 
-<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="400px">
+<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="500px">
 
 #### Görsel 2: Mesajın Sisteme Kaydedilmesi
 
 Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme kaydedilir.
 
-<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="400px">
+<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="500px">
 
 #### Görsel 3: Anlık Duygu Analizi Sonucu
 
