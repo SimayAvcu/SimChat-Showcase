@@ -68,14 +68,6 @@ Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygu
 
 ---
 
-## 3. Metin Özetleme Modülü (Text Summarization)
-
-### 3.1. Genel Akış ve Özellik
-
-Bu modül, kullanıcıların yüklediği uzun metinlerin ana fikrini kaybetmeden hızlı ve verimli bir şekilde özetlenmesini sağlar. Bu özellik, kullanıcıların yoğun mesaj trafiğini veya uzun haber metinlerini kolayca sindirmesine yardımcı olur.
-
----
-
 
 ## 3. Metin Özetleme Modülü (Text Summarization)
 
