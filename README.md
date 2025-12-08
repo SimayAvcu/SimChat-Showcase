@@ -30,3 +30,44 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 
 
 ---
+
+---
+
+## 2. Duygu Analizi ve Uygulama Akışı
+
+### 2.1. Genel Uygulama Akışı (General Application Flow)
+
+SimChat kullanıcıları, sisteme İngilizce mesajlarını yükleyerek iki temel hizmetten yararlanabilirler:
+
+* **Duygu Analizi (Emotion Analysis):** Kullanıcının mesajında bulunan duyguyu (emotion) tespit eder.
+* **Metin Özetleme (Text Summarization):** Yüklenen uzun metinleri kısaltır.
+
+Bu bölümde, Duygu Analizi modülünün çalışma akışı üç aşamalı görsel ile sunulmuştur:
+
+---
+
+### 2.2. Duygu Analizi Modülü Akışı
+
+#### Görsel 1: Mesaj Girişi
+
+Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
+
+<img src="mesaj_gonder.png" alt="Mesaj Giriş Ekranı" width="800px">
+
+#### Görsel 2: Mesajın Sisteme Kaydedilmesi
+
+Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme kaydedilir.
+
+<img src="mesaj_goruntule.png" alt="Mesaj Görüntüleme Ekranı" width="800px">
+
+#### Görsel 3: Anlık Duygu Analizi Sonucu
+
+Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygusu anlık olarak etiketlenir ve görüntülenir.
+
+<img src="duygu_analizi.png" alt="Duygu Analizi Ekranı" width="800px">
+
+---
+
+### 2.3. Teknik Detay (İş Akışı)
+
+*(Bu kısma, bir sonraki adımda BERT modelini ve hangi kütüphaneleri kullandığınızı ekleyebiliriz.)*
