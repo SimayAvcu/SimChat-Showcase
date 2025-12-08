@@ -25,12 +25,12 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 
 #### Görsel 1: Üst Bölüm (Başlık ve Menü)
 
-![SimChat Ana Sayfa Üst Bölüm](Homepage of SimChat.png)
+![SimChat Ana Sayfa Üst Bölüm](homepage_ust.png)
 
 
 #### Görsel 2: Alt Bölüm
 
-![SimChat Ana Sayfa Alt Bölüm](Homepage of SimChat2.png)
+![SimChat Ana Sayfa Alt Bölüm](homepage_alt.png)
 
 
 ---
