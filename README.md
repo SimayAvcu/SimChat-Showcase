@@ -52,7 +52,7 @@ Bu bölümde, Duygu Analizi modülünün çalışma akışı üç aşamalı gör
 
 Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
 
-<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="500px">
+<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="450px">
 
 #### Görsel 2: Mesajın Sisteme Kaydedilmesi
 
@@ -68,6 +68,28 @@ Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygu
 
 ---
 
-### 2.3. Teknik Detay (İş Akışı)
+## 3. Metin Özetleme Modülü (Text Summarization)
 
-*(Bu kısma, bir sonraki adımda BERT modelini ve hangi kütüphaneleri kullandığınızı ekleyebiliriz.)*
+### 3.1. Genel Akış ve Özellik
+
+Bu modül, kullanıcıların yüklediği uzun metinlerin ana fikrini kaybetmeden hızlı ve verimli bir şekilde özetlenmesini sağlar. Bu özellik, kullanıcıların yoğun mesaj trafiğini veya uzun haber metinlerini kolayca sindirmesine yardımcı olur.
+
+---
+
+### 3.2. Metin Özetleme Modülü Akışı
+
+#### Görsel 1: Metin Girişi
+
+Kullanıcı, özetlemek istediği uzun metni ilgili alana yapıştırır.
+
+<img src="ozetleme_giris.png" alt="Metin Özetleme Giriş Ekranı" width="800px">
+*(Lütfen 'ozetleme_giris.png' dosya adını kendi görsel adınızla değiştirin.)*
+
+#### Görsel 2: Özetleme Çıktısı
+
+Gönderilen metin, arka plandaki **BART (Bidirectional and Auto-Regressive Transformer)** modeline iletilir. Model, metni kısaltarak kritik bilgileri koruyan bir özet metin oluşturur.
+
+<img src="ozetleme_cikti.png" alt="Metin Özetleme Sonucu" width="800px">
+*(Lütfen 'ozetleme_cikti.png' dosya adını kendi görsel adınızla değiştirin.)*
+
+---
