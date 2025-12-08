@@ -97,11 +97,11 @@ Kullanıcı, özetlenmesini istediği uzun metni ilgili alana yapıştırır.
 
 Gönderilen orijinal metin, sisteminize kaydedilir ve kullanıcının takip edebilmesi için görüntülenir.
 
-<img src="message_display_interface.png" alt="Metin Görüntüleme Ekranı" width="500px">
+<img src="message_display_interface.png" alt="Metin Görüntüleme Ekranı" width="600px">
 
 #### Görsel 3: Özetleme Sonucu (Çıktı)
 
 Sistem, orijinal metni arka plandaki **BART** modeline ileterek kısa, öz ve akıcı bir özet metin oluşturur ve kullanıcıya sunar.
 
-<img src="text_summarization_module_output.png" alt="Metin Özetleme Sonucu" width="500px">
+<img src="text_summarization_module_output.png" alt="Metin Özetleme Sonucu" width="600px">
 
