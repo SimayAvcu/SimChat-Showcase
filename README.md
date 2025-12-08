@@ -126,9 +126,3 @@ Metin özetleme fonksiyonu, uzun metinlerin anlamsal bütünlüğünü koruyarak
 
 ---
 
-## 📞 İletişim
-
-Projenin teknik detayları, mimarisi veya canlı demo talebi için benimle iletişime geçebilirsiniz.
-
-* **LinkedIn:** [linkedin.com/in/simay-avcu-3b8029279/](https://www.linkedin.com/in/simay-avcu-3b8029279/)
-* **Email:** simayavcu5@gmail.com
