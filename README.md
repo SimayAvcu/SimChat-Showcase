@@ -1,6 +1,3 @@
-# SimChat-Showcase
-Web tabanlı Duygu Analizi ve Metin Özetleme sistemi olan SimChat'in vitrin ve tanıtım sayfasıdır. Projenin ana özelliklerini ve görsel çıktılarını sergiler.
-
 # SimChat – Web Tabanlı Duygu Analizi ve Metin Özetleme Platformu
 
 > **⚠️ Önemli Not:** Bu projenin kaynak kodları, fikri mülkiyet ve ticari potansiyeli nedeniyle özel (private) bir GitHub deposunda tutulmaktadır. Bu sayfa sadece projenin görsel ve fonksiyonel yeteneklerini sergilemek amacıyla oluşturulmuştur.
@@ -18,7 +15,6 @@ SimChat, kullanıcılar arası sosyal etkileşimi yönetirken, aynı zamanda NLP
 **Açıklama:**
 SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknolojileri kullanılarak geliştirilmiştir. Arayüz; **kullanıcı dostu, sade ve sezgisel** bir deneyim sunacak şekilde tasarlanmıştır. Kullanıcılar uygulama ile temel olarak iki ana web arayüzü üzerinden etkileşim kurar: **Mesaj Giriş Sayfası** ve **Mesaj Görüntüleme & Analiz Sayfası.**
 
-
 ---
 ### Ana Sayfa Görünümü
 
@@ -28,8 +24,6 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 #### Görsel 2: Alt Bölüm (Ana Özellikler)
 <img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm">
 
-
----
 
 ---
 
@@ -68,6 +62,16 @@ Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygu
 
 ---
 
+### 2.3. Teknik Detay (İş Akışı)
+
+Duygu analizi, Hugging Face'in Transformer kütüphanesi üzerine kurulmuştur ve **DistilBERT** mimarisi baz alınmıştır. Bu süreçte kritik adımlar şunlardır:
+
+* **Model Seçimi:** Spesifik duygu tespiti için fine-tune edilmiş **`bhadresh-savani/bert-base-go-emotion`** modeli kullanılmıştır. Bu model, 28 farklı duygu kategorisini (joy, sadness, anger, fear, vb.) çoklu etiketleme (multi-label) yöntemiyle analiz eder.
+* **İş Akışı:** Gelen İngilizce mesajlar doğrudan modele iletilir. Model, bir **sigmoid aktivasyon fonksiyonu** uygulayarak çıktı üretir.
+* **Güven Eşiği:** Duygu etiketlerinden, **%0.2'nin üzerindeki** güven skoruna sahip olanlar seçilerek (confidence score > 0.2) kullanıcıya sunulur. Bu, hassasiyet ve kesinlik arasında bir denge sağlar.
+* **Arka Uç (Backend):** Bu süreçlerin tamamı **Django** (Python) framework'ü üzerinde yönetilmektedir.
+
+---
 
 ## 3. Metin Özetleme Modülü (Text Summarization)
 
@@ -97,3 +101,34 @@ Sistem, orijinal metni arka plandaki **BART** modeline ileterek kısa, öz ve ak
 
 <img src="text_summarization_module_output.png" alt="Metin Özetleme Sonucu" width="600px">
 
+---
+
+### 3.3. Teknik Detay (İş Akışı)
+
+Metin özetleme fonksiyonu, uzun metinlerin anlamsal bütünlüğünü koruyarak özetlenmesini sağlar.
+
+* **Model Seçimi:** Yüksek kaliteli özetleme için **Encoder-Decoder mimarisine** sahip **`facebook/bart-large-cnn`** modeli kullanılmıştır. Model, özellikle haber makaleleri gibi uzun içerikleri özetlemek üzere eğitilmiştir.
+* **Özetleme Yöntemi:** Model, anlamsal olarak tutarlı özetler üretmek için **Beam Search** algoritmasını kullanır.
+* **Kısa Metin Yönetimi:** Kullanıcı deneyimini artırmak amacıyla, eğer girdi mesajı **çok kısaysa (örneğin 20 kelimeden az)**, sistem özetlemeyi atlar ve orijinal metni olduğu gibi döndürür. Bu, anlamsal tutarsızlığı önler.
+
+---
+
+## 4. Kullanılan Temel Teknolojiler ve Kütüphaneler
+
+* **Backend Framework:** **Django** (Python) – URL yönlendirme, form yönetimi ve NLP servislerinin tetiklenmesi için.
+* **Derin Öğrenme / NLP:**
+    * **Duygu Analizi:** **DistilBERT** tabanlı (`bhadresh-savani/bert-base-go-emotion`).
+    * **Metin Özetleme:** **BART** tabanlı (`facebook/bart-large-cnn`).
+* **NLP Kütüphaneleri:** **transformers** (Hugging Face), **PyTorch (torch)** (tensör işlemleri için), **nltk** (ön işleme için).
+* **Diğer Python Kütüphaneleri:** **fuzzywuzzy** (dizge benzerliği hesaplama ve sayfa yönlendirmesi için).
+* **Frontend:** **HTML, CSS, JavaScript** – Temiz, duyarlı ve kullanıcı dostu arayüz tasarımı.
+* **Veritabanı:** SQLite (varsayılan), PostgreSQL'e geçiş yapılabilir.
+
+---
+
+## 📞 İletişim
+
+Projenin teknik detayları, mimarisi veya canlı demo talebi için benimle iletişime geçebilirsiniz.
+
+* **LinkedIn:** [linkedin.com/in/simay-avcu-3b8029279/](https://www.linkedin.com/in/simay-avcu-3b8029279/)
+* **Email:** simayavcu5@gmail.com
