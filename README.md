@@ -83,13 +83,13 @@ Bu modül, kullanıcıların yüklediği uzun metinlerin ana fikrini kaybetmeden
 
 Kullanıcı, özetlenmesini istediği uzun metni ilgili alana yapıştırır.
 
-<img src="message_input_interface.png" alt="Metin Özetleme Giriş Ekranı" width="450px">
+<img src="message_input_interface2.png" alt="Metin Özetleme Giriş Ekranı" width="450px">
 
 #### Görsel 2: Metnin Sisteme Kaydedilmesi ve Görüntülenmesi
 
 Gönderilen orijinal metin, sisteminize kaydedilir ve kullanıcının takip edebilmesi için görüntülenir.
 
-<img src="message_display_interface.png" alt="Metin Görüntüleme Ekranı" width="600px">
+<img src="message_display_interface2.png" alt="Metin Görüntüleme Ekranı" width="600px">
 
 #### Görsel 3: Özetleme Sonucu (Çıktı)
 
