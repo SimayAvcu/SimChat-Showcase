@@ -19,10 +19,10 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 ### Ana Sayfa Görünümü
 
 #### Görsel 1: Üst Bölüm (Başlık ve Menü)
-<img src="homepage_ust.png" alt="SimChat Ana Sayfa Üst Bölüm" width="700px">
+<img src="homepage_ust.png" alt="SimChat Ana Sayfa Üst Bölüm" width="750px">
 
 #### Görsel 2: Alt Bölüm (Ana Özellikler)
-<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm" width="700px">
+<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm" width="750px">
 
 
 ---
@@ -58,7 +58,7 @@ Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme 
 
 Kayıt edilen mesaj, arka planda NLP modeline iletilir ve mesajın baskın duygusu anlık olarak etiketlenir ve görüntülenir.
 
-<img src="sentiment_analysis_result.png" alt="Duygu Analizi Ekranı" width="800px">
+<img src="sentiment_analysis_result.png" alt="Duygu Analizi Ekranı" width="700px">
 
 ---
 
