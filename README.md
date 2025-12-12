@@ -52,7 +52,7 @@ Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
 
 Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme kaydedilir.
 
-<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="700px">
+<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="600px">
 
 #### Görsel 3: Anlık Duygu Analizi Sonucu
 
