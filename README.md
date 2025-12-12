@@ -19,10 +19,10 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 ### Ana Sayfa Görünümü
 
 #### Görsel 1: Üst Bölüm (Menü ve Ana Özellikler)
-<img src="homepage_ust.png" alt="SimChat Ana Sayfa Üst Bölüm" width="750px">
+<img src="homepage_ust.png" alt="SimChat Ana Sayfa Üst Bölüm" width="800px">
 
 #### Görsel 2: Alt Bölüm (Kullanıcı Yorumları)
-<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm" width="750px">
+<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm" width="800px">
 
 
 ---
