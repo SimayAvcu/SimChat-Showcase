@@ -22,7 +22,7 @@ SimChat'in **Ön Yüz (Frontend)** katmanı **HTML, CSS ve JavaScript** teknoloj
 <img src="homepage_ust.png" alt="SimChat Ana Sayfa Üst Bölüm">
 
 #### Görsel 2: Alt Bölüm (Ana Özellikler)
-<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm">
+<img src="homepage_alt.png" alt="SimChat Ana Sayfa Alt Bölüm" width="450px">
 
 
 ---
@@ -46,13 +46,13 @@ Bu bölümde, Duygu Analizi modülünün çalışma akışı üç aşamalı gör
 
 Kullanıcı, arayüz üzerinden mesajını yazar ve gönderir.
 
-<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="400px">
+<img src="message_input_interface.png" alt="Mesaj Giriş Ekranı" width="450px">
 
 #### Görsel 2: Mesajın Sisteme Kaydedilmesi
 
 Gönderilen mesaj, bir sonraki analiz ve görüntüleme aşaması için sisteme kaydedilir.
 
-<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="700px">
+<img src="message_display_interface.png" alt="Mesaj Görüntüleme Ekranı" width="600px">
 
 #### Görsel 3: Anlık Duygu Analizi Sonucu
 
